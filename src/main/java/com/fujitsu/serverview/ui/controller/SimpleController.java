@@ -1,4 +1,4 @@
-package com.fujitsu.serverview.ui;
+package com.fujitsu.serverview.ui.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -16,7 +16,7 @@ public class SimpleController {
 
     @GetMapping(value = "/welcome", produces = MediaType.TEXT_PLAIN_VALUE)
     public ResponseEntity<String> welcomeMessage() {
-        return new ResponseEntity<String>("Hello world from controller!!!", HttpStatus.OK);
+        return new ResponseEntity<>("Hello world from controller!!!", HttpStatus.OK);
     }
 
     @GetMapping(value = "/welcome", produces = {MediaType.APPLICATION_JSON_UTF8_VALUE, MediaType.APPLICATION_JSON_VALUE})

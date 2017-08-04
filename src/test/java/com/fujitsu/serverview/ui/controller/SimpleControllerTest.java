@@ -1,4 +1,4 @@
-package com.fujitsu.serverview.ui;
+package com.fujitsu.serverview.ui.controller;
 
 
 import org.junit.Test;
