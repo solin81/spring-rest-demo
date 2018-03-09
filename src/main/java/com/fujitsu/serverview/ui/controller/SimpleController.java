@@ -1,5 +1,6 @@
 package com.fujitsu.serverview.ui.controller;
 
+import com.fujitsu.serverview.ui.model.Bean;
 import com.fujitsu.serverview.ui.model.SimpleMessage;
 import com.fujitsu.serverview.ui.service.SimpleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,9 @@ public class SimpleController {
 
     @Autowired
     private SimpleService service;
+
+    @Autowired
+    private Bean myBean;
 
     @GetMapping(value = "/welcome", produces = MediaType.TEXT_PLAIN_VALUE)
     public ResponseEntity<SimpleMessage> welcomeMessage() {

@@ -16,7 +16,7 @@ import java.util.List;
 @Configuration
 @EnableWebMvc
 @ComponentScan("com.fujitsu.serverview.ui")
-class AppConfig extends WebMvcConfigurerAdapter {
+public class AppConfig extends WebMvcConfigurerAdapter {
 
     /*
     @Bean
